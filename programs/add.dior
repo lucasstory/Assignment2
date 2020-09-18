@@ -1,0 +1,7 @@
+var numOne;
+var numTwo;
+
+numOne = 56;
+numTwo = 56+5;
+
+print numTwo;
