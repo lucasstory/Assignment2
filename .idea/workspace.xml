@@ -52,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Translator">
+  <component name="RunManager" selected="Application.RunCompiler">
     <configuration name="RunCompiler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RunCompiler" />
       <module name="dior" />
@@ -76,8 +76,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Translator" />
         <item itemvalue="Application.RunCompiler" />
+        <item itemvalue="Application.Translator" />
         <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>

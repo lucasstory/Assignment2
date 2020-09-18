@@ -1,0 +1,9 @@
+push 0
+pop start
+push 5
+pop end
+push 0
+pop sum
+push start
+push end
+print i
