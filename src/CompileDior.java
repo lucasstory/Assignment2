@@ -4,100 +4,32 @@ import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 public class CompileDior extends diorBaseListener {
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
-    @Override public void enterFile(diorParser.FileContext ctx) { }
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
-    @Override public void exitFile(diorParser.FileContext ctx) { }
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
-    @Override public void enterCode(diorParser.CodeContext ctx) { }
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
-    @Override public void exitCode(diorParser.CodeContext ctx) { }
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
-    @Override public void enterStatement(diorParser.StatementContext ctx) { }
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
-    @Override public void exitStatement(diorParser.StatementContext ctx) { }
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
-    @Override public void enterDeclaration(diorParser.DeclarationContext ctx) { }
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
-    @Override public void exitDeclaration(diorParser.DeclarationContext ctx) { }
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
-    @Override public void enterAssignment(diorParser.AssignmentContext ctx) { }
+    private StringBuilder out = new StringBuilder();
+
+    public String getCompilerCode() {
+        return out.toString();
+    }
+
     /**
      * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
     @Override public void exitAssignment(diorParser.AssignmentContext ctx) {
-        System.out.println("pop " + ctx.ID().getText());
+        String row = "pop " + ctx.ID().getText();
+        this.out.append(row).append("\n");
+        System.out.println(row);
     }
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
-    @Override public void enterExpression(diorParser.ExpressionContext ctx) { }
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
-    @Override public void exitExpression(diorParser.ExpressionContext ctx) { }
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
-    @Override public void enterAddExpression(diorParser.AddExpressionContext ctx) { }
+
     /**
      * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
     @Override public void exitAddExpression(diorParser.AddExpressionContext ctx) {
+        this.out.append("add\n");
         System.out.println("add");
     }
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
-    @Override public void enterUnaryExpression(diorParser.UnaryExpressionContext ctx) { }
     /**
      * {@inheritDoc}
      *
@@ -111,6 +43,7 @@ public class CompileDior extends diorBaseListener {
         else
             value = ctx.ID().getText();
 
+        this.out.append("push ").append(value).append("\n");
         System.out.println("Push " + value);
     }
     /**
@@ -118,38 +51,8 @@ public class CompileDior extends diorBaseListener {
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void enterPrintOut(diorParser.PrintOutContext ctx) { }
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
     @Override public void exitPrintOut(diorParser.PrintOutContext ctx) {
-        System.out.println("print: " + ctx.ID().getText());
+        this.out.append("print ").append(ctx.ID().getText()).append("\n");
+        System.out.println("print " + ctx.ID().getText());
     }
-
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
-    @Override public void enterEveryRule(ParserRuleContext ctx) { }
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
-    @Override public void exitEveryRule(ParserRuleContext ctx) { }
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
-    @Override public void visitTerminal(TerminalNode node) { }
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation does nothing.</p>
-     */
-    @Override public void visitErrorNode(ErrorNode node) { }
 }
