@@ -8,7 +8,7 @@ end = 5;
 sum = 0;
 iterator = 0;
 
-for (iterator from start to end)
-    print iterator;
+for (iterator FROM 1 TO 10)
+    print iterator
 
 print sum;

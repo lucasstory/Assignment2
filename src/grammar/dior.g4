@@ -18,6 +18,7 @@ statement
 : block
 | declaration
 | forStatement
+| whileStatment
 | assignment
 | printOut
 ;
@@ -26,12 +27,18 @@ declaration
 : 'var' ID
 ;
 
+whileStatment
+: 'while' '(' expression ')'
+    statement*
+;
+
 forStatement
-: 'for' ('(')? forConditions (')')? statement
+: 'for' '(' forConditions ')'
+    statement*
 ;
 
 forConditions
-: iterator=varRef 'from' startExpr=expression range='to' endExpr=expression
+: iterator=varRef 'FROM' startExpr=expression range='TO' endExpr=expression
 ;
 
 varRef
@@ -45,10 +52,15 @@ assignment
 expression
 : unaryExpression
 | addExpression
+| compareExpression
 ;
 
 addExpression
 : unaryExpression '+' expression
+;
+
+compareExpression
+: unaryExpression maths expression
 ;
 
 unaryExpression
@@ -58,6 +70,12 @@ unaryExpression
 
 printOut
 : 'print' ID
+;
+
+maths
+: GREATER
+| LESS
+| EQUALS
 ;
 
 ID : [a-zA-Z0-9]+ ;

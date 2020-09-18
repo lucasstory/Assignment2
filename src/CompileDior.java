@@ -59,6 +59,7 @@ public class CompileDior extends diorBaseListener {
      * <p>The default implementation does nothing.</p>
      */
     @Override public void enterForStatement(diorParser.ForStatementContext ctx) {
+        System.out.println();
         this.out.append("Start loop: ").append(ctx.forConditions().startExpr.getText()).append("\n");
         this.out.append("Iterator: ").append(ctx.forConditions().iterator.ID().getText()).append("\n");
         System.out.println("Start loop: " + ctx.forConditions().startExpr.getText());
@@ -71,6 +72,24 @@ public class CompileDior extends diorBaseListener {
      */
     @Override public void exitForStatement(diorParser.ForStatementContext ctx) {
         this.out.append("End loop: ").append(ctx.forConditions().endExpr.getText()).append("\n");
-        System.out.println("End loop: " + ctx.forConditions().endExpr.getText());
+        System.out.println();
+    }
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation does nothing.</p>
+     */
+    @Override public void enterWhileStatment(diorParser.WhileStatmentContext ctx) {
+        System.out.println();
+        System.out.println("Enter while");
+    }
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation does nothing.</p>
+     */
+    @Override public void exitWhileStatment(diorParser.WhileStatmentContext ctx) {
+        System.out.println("Exit while");
+        System.out.println();
     }
 }
