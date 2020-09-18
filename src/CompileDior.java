@@ -63,7 +63,9 @@ public class CompileDior extends diorBaseListener {
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void exitAssignment(diorParser.AssignmentContext ctx) { }
+    @Override public void exitAssignment(diorParser.AssignmentContext ctx) {
+        System.out.println("pop " + ctx.ID().getText());
+    }
     /**
      * {@inheritDoc}
      *
@@ -87,7 +89,9 @@ public class CompileDior extends diorBaseListener {
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void exitAddExpression(diorParser.AddExpressionContext ctx) { }
+    @Override public void exitAddExpression(diorParser.AddExpressionContext ctx) {
+        System.out.println("add");
+    }
     /**
      * {@inheritDoc}
      *
@@ -106,6 +110,7 @@ public class CompileDior extends diorBaseListener {
             value = ctx.INT().getText();
         else
             value = ctx.ID().getText();
+
         System.out.println("Push " + value);
     }
     /**
@@ -119,7 +124,9 @@ public class CompileDior extends diorBaseListener {
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void exitPrintOut(diorParser.PrintOutContext ctx) { }
+    @Override public void exitPrintOut(diorParser.PrintOutContext ctx) {
+        System.out.println("print: " + ctx.ID().getText());
+    }
 
     /**
      * {@inheritDoc}

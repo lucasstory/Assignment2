@@ -2,6 +2,6 @@ var numOne;
 var numTwo;
 
 numOne = 56;
-numTwo = 56+5;
+numTwo = numOne + 4 + 5;
 
 print numTwo;

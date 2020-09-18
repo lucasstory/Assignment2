@@ -25,8 +25,7 @@ assignment
 ;
 
 expression
-: ID
-| INT
+: unaryExpression
 | addExpression
 ;
 
@@ -44,7 +43,7 @@ printOut
 : 'print' ID
 ;
 
-ID:	('a'..'z''A'..'Z')+ ;
+ID : [a-zA-Z0-9]+ ;
 
 INT: ('0'..'9')+ ;
 
