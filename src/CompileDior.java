@@ -1,12 +1,9 @@
 import grammar.*;
-import org.antlr.v4.runtime.ParserRuleContext;
-import org.antlr.v4.runtime.tree.ErrorNode;
-import org.antlr.v4.runtime.tree.TerminalNode;
 
 public class CompileDior extends diorBaseListener {
-    private StringBuilder out = new StringBuilder();
+    private static StringBuilder out = new StringBuilder();
 
-    public String getCompilerCode() {
+    String getCompilerCode() {
         return out.toString();
     }
 
@@ -36,7 +33,7 @@ public class CompileDior extends diorBaseListener {
      * <p>The default implementation does nothing.</p>
      */
     @Override public void exitUnaryExpression(diorParser.UnaryExpressionContext ctx) {
-        String value = "";
+        String value;
 
         if (ctx.ID() == null)
             value = ctx.INT().getText();
