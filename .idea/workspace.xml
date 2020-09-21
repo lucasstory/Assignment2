@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="30162f8f-b6e2-4f0f-af27-c98e96df77df" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="30162f8f-b6e2-4f0f-af27-c98e96df77df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programs/loopAdd.dior" beforeDir="false" afterPath="$PROJECT_DIR$/programs/loopAdd.dior" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompileDior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompileDior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/grammar/dior.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/grammar/dior.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/grammar/diorLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grammar/diorLexer.java" afterDir="false" />
+    </list>
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +25,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1hdvxTwvNcF7tlz86C2GxG53m98" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,10 +39,16 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+<<<<<<< Updated upstream
+=======
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> Stashed changes
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
+<<<<<<< Updated upstream
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -42,6 +62,16 @@
     </option>
   </component>
   <component name="RunManager">
+=======
+  <component name="RunManager" selected="Application.RunCompiler">
+    <configuration name="RunCompiler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RunCompiler" />
+      <module name="dior" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+>>>>>>> Stashed changes
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="Assignment2" />
@@ -69,10 +99,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="94" key="SettingsEditor" timestamp="1600354606086">
+    <state x="-221" y="100" width="1736" height="856" key="DiffContextDialog" timestamp="1600689183180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600354606086" />
+    <state x="-221" y="100" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600689183180" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1600691787256">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600691787256" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1600691787255">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600691787255" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1600691787255">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600691787255" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1600691787255">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600691787255" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1600688084574">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600688084574" />
     <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1600354603533">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
