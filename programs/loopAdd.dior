@@ -1,14 +1,5 @@
-var start;
-var end;
-var sum;
-var iterator;
-
-start = 0;
-end = 5;
-sum = 0;
-iterator = 0;
-
-for (iterator FROM 1 TO 10)
-    print iterator
-
-print sum;
+count = 0
+while (count < 9)
+  count+
+  print count+
+end while
