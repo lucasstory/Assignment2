@@ -24,7 +24,7 @@ public class CompileDior extends diorBaseListener {
      * <p>The default implementation does nothing.</p>
      */
     @Override public void exitAddExpression(diorParser.AddExpressionContext ctx) {
-        this.out.append("Add ").append(ctx.getText());
+        this.out.append("add ").append(ctx.getText());
         System.out.println("Add " + ctx.getText());
     }
     /**
@@ -62,10 +62,10 @@ public class CompileDior extends diorBaseListener {
         System.out.println();
         int x = Integer.parseInt(ctx.forConditions().endExpr.getText());
         for (int i = Integer.parseInt(ctx.forConditions().startExpr.getText()); i <= x; i++) {
-            this.out.append("Start loop: ").append(ctx.forConditions().startExpr.getText()).append("\n");
+            this.out.append("push ").append(i).append("\n");
             this.out.append("Iterator: ").append(ctx.forConditions().iterator.ID().getText()).append("\n");
             System.out.println("Start loop: " + ctx.forConditions().startExpr.getText());
-            System.out.println("i " + i);
+            System.out.println("push i " + i);
             System.out.println("Iterator: " + ctx.forConditions().iterator.ID().getText());
         }
     }
