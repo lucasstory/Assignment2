@@ -61,7 +61,7 @@ public class CompileDior extends diorBaseListener {
     @Override public void enterForStatement(diorParser.ForStatementContext ctx) {
         System.out.println();
         int x = Integer.parseInt(ctx.forConditions().endExpr.getText());
-        for (int i = Integer.parseInt(ctx.forConditions().startExpr.getText()); i < x; i++) {
+        for (int i = Integer.parseInt(ctx.forConditions().startExpr.getText()); i <= x; i++) {
             this.out.append("Start loop: ").append(ctx.forConditions().startExpr.getText()).append("\n");
             this.out.append("Iterator: ").append(ctx.forConditions().iterator.ID().getText()).append("\n");
             System.out.println("Start loop: " + ctx.forConditions().startExpr.getText());
