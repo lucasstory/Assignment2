@@ -1,0 +1,21 @@
+push 0
+pop start
+push 5
+pop end
+push 0
+pop sum
+push 0
+pop iterator
+Start loop: 1
+Iterator: iterator
+Start loop: 1
+Iterator: iterator
+Start loop: 1
+Iterator: iterator
+Start loop: 1
+Iterator: iterator
+push 1
+push 5
+print iterator
+print sum
+End loop: 5

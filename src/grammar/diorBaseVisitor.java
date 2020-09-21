@@ -1,4 +1,7 @@
+// Generated from C:/Users/vikto/Documents/GitHub/Assignment2/src/grammar\dior.g4 by ANTLR 4.8
+
 // Generated from C:/Users/lelia/OneDrive/Dokument/GitHub/Assignment2/src/grammar\dior.g4 by ANTLR 4.8
+
 package grammar;
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 

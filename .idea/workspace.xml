@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30162f8f-b6e2-4f0f-af27-c98e96df77df" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +13,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1hdvxTwvNcF7tlz86C2GxG53m98" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,7 +27,6 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -40,17 +40,13 @@
       <recent name="C:\Users\lelia\OneDrive\Dokument\GitHub\Assignment2\programs" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vikto\Documents\GitHub\Assignment2\programs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vikto\Documents\GitHub\Assignment2\src" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.RunCompiler">
     <configuration name="RunCompiler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -74,6 +70,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Translator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Translator" />
+      <module name="Assignment2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.RunCompiler" />
@@ -87,7 +90,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="30162f8f-b6e2-4f0f-af27-c98e96df77df" name="Default Changelist" comment="" />
+      <changelist id="0ba4ba1e-5c1c-4ad5-9df6-d26a7c11f4fa" name="Default Changelist" comment="" />
       <created>1600354030148</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -96,10 +99,42 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="94" key="SettingsEditor" timestamp="1600354606086">
+    <state x="677" y="178" key="#RunCompiler" timestamp="1600698705241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600354606086" />
+    <state x="677" y="178" key="#RunCompiler/0.0.1920.1040@0.0.1920.1040" timestamp="1600698705241" />
+    <state x="722" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600698472221">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="722" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600698472221" />
+    <state x="-221" y="100" width="1736" height="856" key="DiffContextDialog" timestamp="1600689183180">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-221" y="100" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600689183180" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600704909562">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600704909562" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1600698987405">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600698987405" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1600698987405">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600698987405" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1600698987405">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600698987405" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1600698987405">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600698987405" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1600688084574">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600688084574" />
     <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1600354603533">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

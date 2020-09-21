@@ -1,0 +1,7 @@
+push 56
+pop numOne
+push numOne
+push 4
+push 5
+Add 4+5Add numOne+4+5pop numTwo
+print numTwo
