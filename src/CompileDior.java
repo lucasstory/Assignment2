@@ -182,13 +182,26 @@ public class CompileDior extends diorBaseListener {
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void enterForStatement(diorParser.ForStatementContext ctx) { }
+    @Override public void enterForStatement(diorParser.ForStatementContext ctx) {
+        System.out.println();
+        int x = Integer.parseInt(ctx.forConditions().endExpr.getText());
+        for (int i = Integer.parseInt(ctx.forConditions().startExpr.getText()); i <= x; i++) {
+            this.out.append("push ").append(i).append("\n");
+            this.out.append("Iterator: ").append(ctx.forConditions().iterator.ID().getText()).append("\n");
+            System.out.println("Start loop: " + ctx.forConditions().startExpr.getText());
+            System.out.println("push i " + i);
+            System.out.println("Iterator: " + ctx.forConditions().iterator.ID().getText());
+        }
+    }
     /**
      * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void exitForStatement(diorParser.ForStatementContext ctx) { }
+    @Override public void exitForStatement(diorParser.ForStatementContext ctx) {
+        this.out.append("End loop: ").append(ctx.forConditions().endExpr.getText()).append("\n");
+        System.out.println();
+    }
     /**
      * {@inheritDoc}
      *
