@@ -1,6 +1,4 @@
-
-// Generated from C:/Users/lelia/OneDrive/Dokument/GitHub/Assignment2/src/grammar\dior.g4 by ANTLR 4.8
-
+// Generated from C:/Users/vikto/Documents/GitHub/Assignment2/src/grammar\dior.g4 by ANTLR 4.8
 package grammar;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
@@ -87,6 +85,24 @@ public interface diorVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitDo_while_statement(diorParser.Do_while_statementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link diorParser#forStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitForStatement(diorParser.ForStatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link diorParser#forConditions}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitForConditions(diorParser.ForConditionsContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link diorParser#varRef}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitVarRef(diorParser.VarRefContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code notEqualityExpression}
 	 * labeled alternative in {@link diorParser#expression}.

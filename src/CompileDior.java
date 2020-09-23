@@ -182,6 +182,42 @@ public class CompileDior extends diorBaseListener {
      *
      * <p>The default implementation does nothing.</p>
      */
+    @Override public void enterForStatement(diorParser.ForStatementContext ctx) { }
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation does nothing.</p>
+     */
+    @Override public void exitForStatement(diorParser.ForStatementContext ctx) { }
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation does nothing.</p>
+     */
+    @Override public void enterForConditions(diorParser.ForConditionsContext ctx) { }
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation does nothing.</p>
+     */
+    @Override public void exitForConditions(diorParser.ForConditionsContext ctx) { }
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation does nothing.</p>
+     */
+    @Override public void enterVarRef(diorParser.VarRefContext ctx) { }
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation does nothing.</p>
+     */
+    @Override public void exitVarRef(diorParser.VarRefContext ctx) { }
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation does nothing.</p>
+     */
     @Override public void enterNotEqualityExpression(diorParser.NotEqualityExpressionContext ctx) { }
     /**
      * {@inheritDoc}

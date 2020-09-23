@@ -1,5 +1,4 @@
-// Generated from C:/Users/lelia/OneDrive/Dokument/GitHub/Assignment2/src/grammar\dior.g4 by ANTLR 4.8
-
+// Generated from C:/Users/vikto/Documents/GitHub/Assignment2/src/grammar\dior.g4 by ANTLR 4.8
 package grammar;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
@@ -134,6 +133,36 @@ public interface diorListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitDo_while_statement(diorParser.Do_while_statementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link diorParser#forStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterForStatement(diorParser.ForStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link diorParser#forStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitForStatement(diorParser.ForStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link diorParser#forConditions}.
+	 * @param ctx the parse tree
+	 */
+	void enterForConditions(diorParser.ForConditionsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link diorParser#forConditions}.
+	 * @param ctx the parse tree
+	 */
+	void exitForConditions(diorParser.ForConditionsContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link diorParser#varRef}.
+	 * @param ctx the parse tree
+	 */
+	void enterVarRef(diorParser.VarRefContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link diorParser#varRef}.
+	 * @param ctx the parse tree
+	 */
+	void exitVarRef(diorParser.VarRefContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code notEqualityExpression}
 	 * labeled alternative in {@link diorParser#expression}.

@@ -47,6 +47,20 @@ do_while_statement
  : DO NEW_LINE statement_block WHILE expression
  ;
 
+forStatement
+ : 'for' '(' forConditions ')'
+     statement*
+ ;
+
+forConditions
+ : iterator=varRef 'FROM' startExpr=expression range='TO' endExpr=expression
+ ;
+
+varRef
+ : ID
+ ;
+
+
 // Added unary expressions instead of combining them in the lexer.
 expression
  : atom                                            # atomExpression
